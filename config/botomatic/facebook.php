@@ -32,7 +32,7 @@ return [
         'greeting_text' => [
             [
                 'locale' => 'default',
-                'text' => 'Servus {{user_full_name}}',
+                'text' => 'Hallo {{user_full_name}}',
             ]
         ],
 
@@ -55,17 +55,12 @@ return [
                 'composer_input_disabled' => false,
                 'call_to_actions' => [
                     [
-                        'title' => 'Example',
+                        'title' => '📑 List',
                         'type' => 'postback',
-                        'payload' => MenuPayloads::PAYLOAD_EXAMPLE
+                        'payload' => MenuPayloads::PAYLOAD_LIST
                     ],
                     [
-                        'title' => 'Reset',
-                        'type' => 'postback',
-                        'payload' => MenuPayloads::PAYLOAD_RESET
-                    ],
-                    [
-                        'title' => 'Powered by Botomatic',
+                        'title' => '🤖 Powered by Botomatic',
                         'type' => 'web_url',
                         'url' => 'http://botomatic.io'
                     ]

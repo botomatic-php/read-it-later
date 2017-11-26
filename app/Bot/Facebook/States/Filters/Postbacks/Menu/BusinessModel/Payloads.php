@@ -11,6 +11,5 @@ namespace App\Bot\Facebook\States\Filters\Postbacks\Menu\BusinessModel;
  */
 class Payloads
 {
-    const PAYLOAD_RESET = 'payload_menu_reset';
-    const PAYLOAD_EXAMPLE = 'payload_menu_example';
+    const PAYLOAD_LIST = 'payload_menu_list';
 }
