@@ -1,9 +1,18 @@
-![img](https://botomatic.io/favicon.png)
+# Read it Later Chatbot
 
-# Botomatic v1.0 Beta
+A working instance of this Chatbot can be found on it's Facebook Page: [Read It Later](https://www.facebook.com/readitlaterchatbot/)
 
-MIT License (MIT) Copyright (c) Links der Isar <http://www.linksderisar.com>
+----
 
-Botomatic is a web application framework build with [Laravel](http://laravel.com) designed for building chatbots for [Messenger Platform](https://developers.facebook.com/docs/messenger-platform/).
- 
-Read the documentation here: https://botomatic.io/docs/1.0
+# How it works
+
+1. Write any url, the bot will ask to save it.
+2. Type "show me the list" or use the menu to see the list
+
+
+
+----
+
+Built with [Botomatic](http://botomatic.io)
+
+

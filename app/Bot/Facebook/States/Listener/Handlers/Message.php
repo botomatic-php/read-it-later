@@ -16,7 +16,7 @@ class Message extends \Botomatic\Engine\Facebook\Abstracts\States\Message\Handle
     /**
      * @return bool
      */
-    public function saysHi(): bool
+    public function saysHi() : bool
     {
         return $this->normalizeMessage() == 'hi';
     }

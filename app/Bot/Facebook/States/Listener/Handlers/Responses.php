@@ -27,7 +27,7 @@ class Responses extends \Botomatic\Engine\Facebook\Abstracts\States\Response\Han
      */
     public function options() : Response
     {
-        return $this->response->addMessage('Can\'t understand that.... say hi')
+        return $this->response->addMessage('So far I can only save links. I know, not too smart.')
             ->sendResponse()
             ->setStatusActive();
     }

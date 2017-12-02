@@ -1,13 +1,12 @@
 <?php 
 
-namespace App\Bot\Facebook\States\Filters\Actions\Url\Handlers;
+namespace App\Bot\Facebook\States\Filters\General\ShowList\Handlers;
 
 use Botomatic\Engine\Facebook\Abstracts\States\Message\Traits;
 
-
 /**
  * Class Message
- * @package  App\Bot\Facebook\States\Filters\Actions\Url\Handlers
+ * @package  App\Bot\Facebook\States\Filters\General\ShowList\Handlers
  */
 class Message extends \Botomatic\Engine\Facebook\Abstracts\States\Message\Handler
 {
@@ -16,8 +15,9 @@ class Message extends \Botomatic\Engine\Facebook\Abstracts\States\Message\Handle
     /**
      * @return bool
      */
-    public function isUrl() : bool
+    public function wantsToSeeTheList() : bool
     {
-        return filter_var($this->normalizeMessage(), FILTER_VALIDATE_URL);
+        return $this->normalizeMessage() == 'show me the list';
     }
+
 }

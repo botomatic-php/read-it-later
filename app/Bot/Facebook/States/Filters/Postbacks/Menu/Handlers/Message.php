@@ -14,16 +14,8 @@ class Message extends \Botomatic\Engine\Facebook\Abstracts\States\Message\Handle
     /**
      * @return bool
      */
-    public function isReset() : bool
+    public function isList() : bool
     {
-        return $this->message()->postback()->getPayload() == Payloads::PAYLOAD_RESET;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isExample() : bool
-    {
-        return $this->message()->postback()->getPayload() == Payloads::PAYLOAD_EXAMPLE;
+        return $this->message()->postback()->getPayload() == Payloads::PAYLOAD_LIST;
     }
 }

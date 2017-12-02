@@ -1,22 +1,22 @@
 <?php 
 
-namespace App\Bot\Facebook\States\Filters\Postbacks\Menu;
+namespace App\Bot\Facebook\States\Filters\General\ShowList;
 
 use \Botomatic\Engine\Facebook\Entities\Response;
 
 /**
- * Class Menu
- * @package  App\Bot\Facebook\States\Filters\Postbacks\Menu
+ * Class ShowList
+ * @package  App\Bot\Facebook\States\Filters\General\ShowList
  */
-class Menu extends \Botomatic\Engine\Facebook\Abstracts\States\Filter
+class ShowList extends \Botomatic\Engine\Facebook\Abstracts\States\Filter
 {
     /**
-     * @var  \App\Bot\Facebook\States\Filters\Postbacks\Menu\Handlers\Responses
+     * @var  \App\Bot\Facebook\States\Filters\General\ShowList\Handlers\Responses
      */
     protected $response;
 
     /**
-     * @var  \App\Bot\Facebook\States\Filters\Postbacks\Menu\Handlers\Message
+     * @var  \App\Bot\Facebook\States\Filters\General\ShowList\Handlers\Message
      */
     protected $message;
 
@@ -27,11 +27,12 @@ class Menu extends \Botomatic\Engine\Facebook\Abstracts\States\Filter
      */
     protected function process() : Response
     {
-        if ($this->message->isList())
+        if ($this->message->wantsToSeeTheList())
         {
             return $this->jumpToWorkflowState(new \App\Bot\Facebook\States\Workflow\ReadList\Paginate\Paginate());
         }
 
         return $this->response->response();
     }
+
 }

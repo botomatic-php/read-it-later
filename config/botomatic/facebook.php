@@ -11,7 +11,7 @@ return [
      *
      ------------------------------------------------------------------------------------------------------------------*/
     'pages' => [
-        '12345678' => 'longappaccesstoken'
+        env('FACEBOOK_PAGE_ID') => env('FACEBOOK_PAGE_ACCESS_TOKEN')
     ],
 
     /*------------------------------------------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ return [
         'greeting_text' => [
             [
                 'locale' => 'default',
-                'text' => 'Hallo {{user_full_name}}',
+                'text' => 'Hallo {{user_full_name}}, I will keep track of anything you want to read later.',
             ]
         ],
 
@@ -43,6 +43,8 @@ return [
          * deliver the user's page-scoped ID (PSID).
          *
          * https://developers.facebook.com/docs/messenger-platform/messenger-profile/get-started-button
+         *
+         * App\Bot\Facebook\States\Filters\Postbacks\GetStarted Postback is already responding to this payload
          */
         'get_started_button' => 'payload_get_started',
 
