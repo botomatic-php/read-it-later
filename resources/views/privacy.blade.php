@@ -7,13 +7,6 @@
     in this Privacy Policy.
 </p> <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible
     at Read It Later unless otherwise defined in this Privacy Policy.
-</p> <p><strong>Information Collection and Use</strong></p> <p>For a better experience, while using our Service, I may require you to provide us with certain
-    personally identifiable information, including but not limited to email address. The information that I request is retained on your device and is not collected by me in any way
-</p> <p>The app does use third party services that may collect information used to identify you.</p> <div><p>Link to privacy policy of third party service providers used by the app </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li> <!----> <!----> <!----></ul></div> <p><strong>Log Data</strong></p> <p> I want to inform you that whenever you use my Service, in a case of an
-    error in the app I collect data and information (through third party products) on your phone
-    called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address,
-    device name, operating system version, the configuration of the app when utilizing my Service,
-    the time and date of your use of the Service, and other statistics.
 </p> <p><strong>Security</strong></p> <p> I value your trust in providing us your Personal Information, thus we are striving
     to use commercially acceptable means of protecting it. But remember that no method of transmission over
     the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee
