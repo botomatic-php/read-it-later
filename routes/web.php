@@ -22,3 +22,9 @@ Route::middleware(['auth'])->group(function () {
 
 });
 
+
+Route::get('privacy', function() {
+    return view('privacy');
+});
+
+
